@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+<script src="https://kit.fontawesome.com/59a9e7bd2d.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="landing-page.css">
+ 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+ </head>
+<body>
+
+<!-----Hero Section------>
+<section class="hero py-4 ">
+  <div class="container">
+      <h2 class="m-5 p-3" style="font-weight: bold;">Key Features</h2>
+    <div class="row">
+
+      <div class="col-md-4 py-4">
+        
+             <i class="fas fa-key" style="font-size:35px; color:#1779ba;"></i>
+             <h5 style="font-weight:450;color:#585858;font-size:20px;">Single Sign On</h5>
+          <p style="color:#777777;">Easy and seamless access to all resources. WordPress Single Sign On via any existing SAML 2.0 Identity Provider</p>
+      
+      </div>
+
+    <div class="col-md-4 py-4">
+                  <i class="fas fa-shield-alt" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Protect Your Complete Site</h5>
+             <p style="color:#777777;">You can restrict your site to only logged in users by redirecting the users to your IdP if logged in session is not found</p>
+      </div>
+
+      <div class="col-md-4 py-4">
+                  <i class="fas fa-sign-in-alt" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Login Page</h5>
+             <p style="color:#777777;">Allows Auto-redirect to IDP from login page even user using multiple service provider</p>
+      </div>
+      <div class="col-md-4 py-4">
+                  <i class="fas fa-exchange-alt" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Attribute Mapping</h5>
+             <p style="color:#777777;">Helps you to get user attributes from your IdP and map them to WordPress user attributes like firstname, lastname with support for custom attributes</p>
+      </div>
+      <div class="col-md-4 py-4">
+                  <i class="fa fa-user-secret" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Role Mapping</h5>
+             <p style="color:#777777;">Helps you to assign specific roles to users of a certain group in your IdP</p>
+      </div>
+      <div class="col-md-4 py-4">
+                  <i class="fa fa-window-restore" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Multisite Support</h5>
+             <p style="color:#777777;">Consisting Multisites to share single installation. Configure IDP for all your networks</p>
+      </div>
+      <div class="col-md-4 py-4">
+                  <i class="fa fa-hand-o-up" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Widget/Shortcode to add IDP Login</h5>
+             <p style="color:#777777;">Add a link or button anywhere on your WordPress site to allow user to authenticate via their Identity Provider</p>
+      </div>
+      <div class="col-md-4 py-4">
+                  <i class="fas fa-sign-out-alt" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Single Logout</h5>
+             <p style="color:#777777;">Allows user to logout once from any service provider even user handling multiple service provider.</p>
+      </div>
+      <div class="col-md-4 py-4">
+                  <i class="fa fa-cogs" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Multiple IDP's Supported</h5>
+             <p style="color:#777777;">Configuration of multiple IDP's to authenticate the different group of users with different IDP's.</p>
+      </div><div class="col-md-4 py-4">
+                  <i class="fa fa-server" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Auto-sync IdP Configuration from metadata</h5>
+             <p style="color:#777777;">Keep your IDP SAML Configuration and Certificates updated and in sync</p>
+      </div><div class="col-md-4 py-4">
+                  <i class="fa fa-wifi" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Multinetwork Support</h5>
+             <p style="color:#777777;">Allows multiple subdomains/subdirectories to share single installation. Configure the IDP for all your sites in a network</p>
+      </div><div class="col-md-4 py-4">
+                  <i class="fa fa-users" style="font-size:35px; color:#1779ba;"></i>
+                <h5 style="font-weight:450;color:#585858;font-size:20px;">Federation Support</h5>
+             <p style="color:#777777;">Allows users to Single Sign On into the site via their institution that is affiliated with InCommon Federation</p>
+         </div>
+
+    </div>
+  </div>
+</section>
+
+    
+<!-------------Partition Section--------------->
+<section class="Partition py-4">
+  <div class="Partition">
+    <div class="container">
+      <p>
+              If you want WordPress to acts as a SAML Identity Provider and single sign on into various SAML supported Service Providers to securely authenticate the user using the WordPress site then you need to use WordPress as IDP plugin.<br> <a href="#" style="color:#40E0D0">Click here</a> to know more about WordPress as IDP plugin.
+            </p>
+    </div>
+  </div>
+</section>
+
+<!-------------Plans for EveryOne Section--------------->
+<section class="hero py-4">
+ <div class="container">
+  <h2 style="margin: 20px" style="font-weight: bold;">Plans for Everyone</h2>
+
+  <div class="plansforeveryone">
+    <div class="row">
+
+       <div class="col-md-4">
+        
+
+
+    <table>
+  <tr>
+    <th>
+      <h4 class="mb-8 p-3" style="font-weight: bold;">STANDARD</h4>
+      <h5 class="margin-10 p-2">( Auto-redirect to IdP )</h5>
+      
+      <h1 class="p-3"> <span><sup>$</sup></span>349<span>*</span></h1>
+      
+      <button class="planbutton" type="submit">UPGRADE NOW</button>
+      <p>See the standerd plugin features list below.</p>
+    </th>
+    
+  </tr>
+  <tr>
+    <td>Unlimited Authentications</td>
+    
+  </tr>
+  <tr>
+    <td>Basic Attribute Mapping (Username, Email, First Name, Last Name,Display Name)</td>
+    
+  </tr>
+ <tr>
+    <td>Step-by-step guide to setup IDP</td>
+    
+  </tr>
+
+  <tr>
+    <td>Auto-Redirect to IDP from login page</td>
+    
+  </tr>
+  <tr>
+    <td>Protect your complete site (Auto-Redirect to IDP from any page)</td>
+    
+  </tr>
+  <tr>
+    <td>Change SP base Url and SP Entity ID</td>
+    
+  </tr>
+  <tr>
+    <td>Options to select SAML Request binding type</td>
+    
+  </tr>
+  <tr>
+    <td>Integrated Windows Authentication (supported with AD FS)</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;<br />&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;<b>Add-Ons</b><br />Purchase Separately<br /><a href="#">Contact Us</a><br />&nbsp;<br />&nbsp;</td>
+    
+  </tr>
+
+</table>
+
+  
+      </div>
+
+       <div class="col-md-4">
+        
+
+
+     <table>
+  <tr>
+    <th>
+      <h4 class="mb-8 p-3" style="font-weight: bold;">PREMIUM</h4>
+      <h5 class="margin-10 p-2 " style="font-style:open-sans">( Attribute & Role Mapping )</h5>
+     <h1 class="p-3"> <span><sup>$</sup></span>449<span>*</span></h1>
+      
+      <button class="planbutton" type="submit" style="background-color:#44cec1">UPGRADE NOW</button>
+      <p style="color:black font-size:13px" >See the standerd plugin features list below.</p>
+    </th>
+    
+  </tr>
+  <tr>
+    <td>Unlimited Authentications</td>
+    
+  </tr>
+  <tr>
+    <td>Basic Attribute Mapping (Username, Email, First Name, Last Name,Display Name)</td>
+    
+  </tr>
+ <tr>
+    <td>Step-by-step guide to setup IDP</td>
+    
+  </tr>
+
+  <tr>
+    <td>Auto-Redirect to IDP from login page</td>
+    
+  </tr>
+  <tr>
+    <td>Protect your complete site (Auto-Redirect to IDP from any page)</td>
+    
+  </tr>
+  <tr>
+    <td>Change SP base Url and SP Entity ID</td>
+    
+  </tr>
+  <tr>
+    <td>Options to select SAML Request binding type</td>
+    
+  </tr>
+  <tr>
+    <td>Integrated Windows Authentication (supported with AD FS)</td>
+    
+  </tr>
+  <tr>
+    <td>SAML Single Logout</td>
+    
+  </tr>
+  <tr>
+    <td>Customized Role Mapping</td>
+    
+  </tr>
+  <tr>
+    <td>Auto-sync IdP Configuration from metadata</td>
+    
+  </tr>
+  <tr>
+    <td>Custom Attribute Mapping (Any attribute which is stored in user-meta table)</td>
+    
+  </tr>
+  <tr>
+    <td>Store Multiple IdP Certificates</td>
+    
+  </tr>
+  <tr>
+    <td>Custom SP Certificate</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;<b>Add-Ons</b><br />Purchase Separately<br /><a href="#">Contact Us</a><br />&nbsp;<br />&nbsp;</td>
+    
+  </tr>
+
+</table>
+  
+      </div>
+
+      <div class="col-md-4">
+        
+
+
+   <table>
+  <tr>
+    <th>
+      <h4 class="mb-8 p-3" style="font-weight: bold;">ENTERPRISE</h4>
+      <h5 class="margin-10 p-2">( Multiple IdP & Add-Ons )</h5>
+      
+      <h1 class="p-3"> <span><sup>$</sup></span>549<span>*</span></h1>
+       
+      <button class="planbutton" type="submit">UPGRADE NOW</button>
+      <p style="color:#44cec1 font-size:13px" >See the standerd plugin features list below.</p>
+    </th>
+    
+  </tr>
+  <tr>
+    <td>Unlimited Authentications</td>
+    
+  </tr>
+  <tr>
+    <td>Basic Attribute Mapping (Username, Email, First Name, Last Name,Display Name)</td>
+    
+  </tr>
+ <tr>
+    <td>Step-by-step guide to setup IDP</td>
+    
+  </tr>
+
+  <tr>
+    <td>Auto-Redirect to IDP from login page</td>
+    
+  </tr>
+  <tr>
+    <td>Protect your complete site (Auto-Redirect to IDP from any page)</td>
+    
+  </tr>
+  <tr>
+    <td>Change SP base Url and SP Entity ID</td>
+    
+  </tr>
+  <tr>
+    <td>Options to select SAML Request binding type</td>
+    
+  </tr>
+  <tr>
+    <td>Integrated Windows Authentication (supported with AD FS)</td>
+    
+  </tr>
+  <tr>
+    <td>SAML Single Logout</td>
+    
+  </tr>
+  <tr>
+    <td>Customized Role Mapping</td>
+    
+  </tr>
+  <tr>
+    <td>Auto-sync IdP Configuration from metadata</td>
+    
+  </tr>
+  <tr>
+    <td>Custom Attribute Mapping (Any attribute which is stored in user-meta table)</td>
+    
+  </tr>
+  <tr>
+    <td>Store Multiple IdP Certificates</td>
+    
+  </tr>
+  <tr>
+    <td>Custom SP Certificate</td>
+    
+  </tr>
+  <tr>
+    <td>Multiple IDP's Supported**</td>
+    
+  </tr>
+  <tr>
+    <td>&nbsp;<b>Add-Ons</b><br /> 1. Page Restriction Add-On<br />
+                                        2. Buddypress Attribute Mapping Add-On<br />
+                                        3. LearnDash Attribute Integration Add-On<br />
+                                        4. SSO Login Audit Add-On</td>
+    
+  </tr>
+
+</table>
+
+  
+      </div>
+
+    </div>
+
+</section>
+<!-------------Cost-plan Section--------------->
+<section class="cps py-4">
+  <div class="container">
+  <div class="cost-plan">
+  <p>* Cost applicable for one instance only. License are prepetual and the support plan include 12 months of maintainance (support and version updates).You can renew updates after 12 months at 50% of the current license cost.</p>
+  <p>* MultiSite Network Support-</p>
+  <p style="font-weight: normal;">There is an additional cost for the number of subsites in MultiSite Network.</p>
+  <p>** Multiple IdPs Supported-</p>
+  <p style="font-weight: normal;">There is an additional cost for the Idps if the number of IdP is more than 1.</p>
+
+ 
+ <p style="font-weight: normal;">At miniOrange, we want to ensure you are 100% happy with your purchase. If the premium plugin you purchased is not working as advertised and you've attempted to resolve any issues with our support team, which couldn't get resolved. We will refund the whole amount within 10 days of the purchase. Please email us at <a href="info@xecurify.com">info@xecurify.com</a> for any queries regarding the return policy.
+ <p>10 Days Return Policy-</p>
+ <p style="font-weight: normal;"> For more details refer to <a href="#"> miniOrange SAML Security Compliance</a>.
+</p>
+</div>
+
+  </div>
+</section>
+    
+<!-------------Single-SignOn Section--------------->
+ <section class="sso py-4">
+   <div class="SingleSign-on">
+
+    <div class="container">
+     <div class="row">
+        <div class="col-md-4">
+          <img src="Picture13.png" class="img-fluid" alt="pic" />
+        </div>
+        <div class="col-md-8">
+          <p style=" font-size:30px;">SAML Single Sign On Plugin Compatibility</p> 
+      
+      <p > This plugin is compatible with WordPress <a href="#" >OAuth Server</a> and <a href="#"">SAML IDP</a> plugin. You can now make your WordPress site an OAuth Server and SAML IDP and have the users authenticate themselves with your SAML-compliant IDPs like ADFS, Azure AD. In addition to this, it is also compatible with <a href="#">WordPress 2-Factor Authentication</a>. With this, you can make your website more secure by adding the extra layer of security over WordPress SAML.</p>
+      </div>
+      </div>
+      </div>
+   </div>
+  </section>
+
+
+<!-------------Customer Section--------------->
+ <section class="sso py-4">
+  <div class="container">
+   <div class="customer">
+    <h3 style="font-weight: bold; margin-bottom: 30px">WHAT OUR CUSTOMERS SAY</h3>
+    <div class="card-deck">
+  <div class="card">
+    
+    <div class="card-body">
+      <h5 class="card-title">Great Plugin, Excellent Support</h5>
+      <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>
+      <p class="card-text"> Support is response and extremely helpful too, going well above and beyond compared to most other plugin developers.</p></p>
+       <button class="ReadButton" type="submit">Read More</button>
+    </div>
+  </div>
+  <div class="card">
+    
+     <div class="card-body">
+      <h5 class="card-title">Great Plugin, Even Better Support</h5>
+      <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>
+      <p class="card-text">Awesome plugin for SSO, and truly exceptional service. They spent an hour with me and my client on the phone to help us get it set up.</p></p>
+      <button class="ReadButton" type="submit">Read More</button>
+    </div>
+  </div>
+  <div class="card">
+        <div class="card-body">
+      <h5 class="card-title">Excellent Pluging & Timely Support</h5>
+      <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>&nbsp; <i class="fa fa-star" aria-hidden="true" style="color: gold"></i>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <button class="ReadButton" type="submit">Read More</button>
+    </div>
+  </div>
+</div>
+   </div>
+   </div>
+  </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
